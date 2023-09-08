@@ -1,3 +1,5 @@
+import Card from "./components/Card";
+import image1 from "../assets/images/GROWLO.webp";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
@@ -13,12 +15,10 @@ export default function Home() {
       </div>
 
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-2 lg:text-left">
-        <div className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 cursor-pointer">
-          <span>hello</span>
-        </div>
-        <div className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
-          <span>hello</span>
-        </div>
+        <Card description="Hello" image={image1} />
+        <Card description="" image={image1} />
+        <Card description="" image={image1} />
+        <Card description="Hello" image={image1} />
       </div>
     </main>
   );

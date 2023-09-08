@@ -12,19 +12,23 @@ export default function AddBlog() {
             <div className="">
               <div className="">
                 <span>Title:</span>
-                <TextInput />
+                <TextInput
+                  placeholder="Type something..."
+                  initialValue=""
+                  value=""
+                />
               </div>
               <div className="">
                 <span>Description:</span>
-                <TextInput />
+                <TextInput placeholder="" initialValue="" value="" />
               </div>
               <div className="">
                 <span>Category:</span>
-                <TextInput />
+                <TextInput placeholder="" initialValue="" value="" />
               </div>
               <div className="">
                 <span>Upload image:</span>
-                <TextInput />
+                <TextInput placeholder="" initialValue="" value="" />
               </div>
             </div>
           </div>
