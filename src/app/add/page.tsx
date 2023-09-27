@@ -9,7 +9,7 @@ export default function AddBlog() {
         </div>
         <div className="border-2 h-full w-full rounded border-gray-400">
           <div className="p-8">
-            <div className="">
+            <div className="lg:flex lg:flex-col gap-8">
               <div className="">
                 <span>Title:</span>
                 <TextInput
