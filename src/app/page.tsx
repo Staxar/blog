@@ -22,7 +22,7 @@ const Home: React.FC = () => {
             wrapper="h2"
             repeat={Infinity}
             className="home__title"
-          />{" "}
+          />
         </span>
       </div>
 
