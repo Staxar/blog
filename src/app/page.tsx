@@ -18,7 +18,7 @@ const Home: React.FC = () => {
         <span className="text-5xl w-full text-center h-48 flex items-center justify-center">
           <TypeAnimation
             cursor={false}
-            sequence={["Web Developers", 3000, "Software Engineers", 3000]}
+            sequence={["Web Developers", 2500, "Software Engineers", 2500]}
             wrapper="h2"
             repeat={Infinity}
             className="home__title"
