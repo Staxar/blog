@@ -5,7 +5,7 @@ import profileImg from "../../../public/next.svg";
 function Logo() {
   return (
     <Link href={"/"} className="flex items-center text-dar">
-      <div className="w-12 rounded-full overflow-hidden border border-solid border-dark">
+      <div className="w-12 rounded-full overflow-hidden border border-solid border-dark mr-4">
         <Image
           src={profileImg}
           alt="logo"
