@@ -7,6 +7,7 @@ export default function Home() {
     <main className="flex flex-col items-center justify-center">
       <HomeCoverSection blogs={allBlogs} />
       <FeaturedPosts blogs={allBlogs} />
+      <section></section>
     </main>
   );
 }
