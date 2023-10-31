@@ -11,9 +11,9 @@ import {
 
 function Header() {
   return (
-    <header className="w-full p-4 px-5 sm:px-10 flex items-center justify-between">
+    <header className="w-full p-4 px-5 sm:px-10 flex items-center justify-between m-2">
       <Logo />
-      <nav className="sticky w-max py-3 px-8 border border-solid border-dark rounded-full font-medium capitalize flex items-center top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50 transition-all ease duration-300">
+      <nav className="fixed w-max py-3 px-8 border border-solid border-dark rounded-full font-medium capitalize flex items-center top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50 transition-all ease duration-300">
         <Link href={"/"} className="mr-2">
           Home
         </Link>
