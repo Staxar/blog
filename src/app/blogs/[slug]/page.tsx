@@ -2,9 +2,11 @@ import Image from "next/image";
 import { allBlogs } from "../../../../.contentlayer/generated";
 import Tag from "../../../components/Elements/Tag";
 import BlogDetails from "../../../components/Blog/BlogDetails";
+import RenderMdx from "../../../components/Blog/RenderMdx";
 
 export default function Page({ params }) {
   const blog = allBlogs.find((blog) => blog._raw.flattenedPath === params.slug);
+
   return (
     <article>
       <div className="mb-8 text-center relative w-full h-[70vh] bg-dark">
@@ -31,6 +33,10 @@ export default function Page({ params }) {
         </div>
       </div>
       <BlogDetails blog={blog} slug={params.slug} />
+      <div className="grid grid-cols-12 gap-16 mt-8 px-10">
+        <div className="col-span-4 ">X</div>
+        <RenderMdx blog={blog} />
+      </div>
     </article>
   );
 }
