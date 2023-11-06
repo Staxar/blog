@@ -4,7 +4,7 @@ import React from "react";
 import profileImg from "../../../project images/About-Big.png";
 function Logo() {
   return (
-    <Link href={"/"} className="flex items-center text-dar">
+    <Link href={"/"} className="flex items-center text-dark dark:text-light">
       <div className="w-12 rounded-full overflow-hidden border border-solid border-dark mr-4">
         <Image
           src={profileImg}
