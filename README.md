@@ -1,10 +1,4 @@
-# SEO Optimized Personal Blog with Next.js, Contentlayer, and Tailwind CSS 🔥
-
-
-This repository contains **starter code** for Personal Blog website created using NextJs. <br />
-
-For Demo and Final Code checkout following links👇: <br />
-[Nextjs Personal Blog Website Demo](https://create-blog-with-nextjs.vercel.app/) <br />
+# SEO Optimized Personal Blog with Next.js, Contentlayer, and Tailwind CSS.
 
 
 ### Resources Used in This Project
