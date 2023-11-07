@@ -56,7 +56,7 @@ function Header() {
         <a href="" className="inline-block w-6 h-6 mr-4">
           <TwitterIcon className="hover:scale-125 transition-all ease-linear duration-200" />
         </a>
-        <a href="" className="inline-block w-6 h-6 mr-4">
+        <a href="" className="inline-block w-6 h-6 mr-4 dark:fill-light">
           <GithubIcon className="hover:scale-125 transition-all ease-linear duration-200" />
         </a>
       </div>
