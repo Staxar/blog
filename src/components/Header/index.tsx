@@ -11,6 +11,7 @@ import {
 } from "../Icons";
 import { useThemeSwitch } from "../Hooks/useThemeSwitch";
 import { cx } from "../../utils";
+import siteMetadata from "../../utils/siteMetaData";
 
 function Header() {
   const [mode, setMode] = useThemeSwitch();
@@ -28,12 +29,6 @@ function Header() {
         <Link href={"/"} className="mr-2">
           Home
         </Link>
-        <Link href={"/about"} className="mr-2">
-          About
-        </Link>
-        <Link href={"/contact"} className="mr-2">
-          Contact
-        </Link>
         <button
           onClick={handleModeChange}
           className={cx(
@@ -50,14 +45,29 @@ function Header() {
         </button>
       </nav>
       <div className="">
-        <a href="" className="inline-block w-6 h-6 mr-4">
-          <LinkedinIcon className="hover:scale-125 transition-all ease-linear duration-200" />
+        <a
+          href={siteMetadata.linkedin}
+          className="inline-block w-6 h-6 mr-4"
+          aria-label="Reach out to me via LinkedIn"
+          target="_blank"
+        >
+          <LinkedinIcon className="hover:scale-125 transition-all ease duration-200" />
         </a>
-        <a href="" className="inline-block w-6 h-6 mr-4">
-          <TwitterIcon className="hover:scale-125 transition-all ease-linear duration-200" />
+        <a
+          href={siteMetadata.twitter}
+          className="inline-block w-6 h-6 mr-4"
+          aria-label="Reach out to me via Twitter"
+          target="_blank"
+        >
+          <TwitterIcon className="hover:scale-125 transition-all ease duration-200" />
         </a>
-        <a href="" className="inline-block w-6 h-6 mr-4 dark:fill-light">
-          <GithubIcon className="hover:scale-125 transition-all ease-linear duration-200" />
+        <a
+          href={siteMetadata.github}
+          className="inline-block w-6 h-6 mr-4"
+          aria-label="Check my profile on Github"
+          target="_blank"
+        >
+          <GithubIcon className="  hover:scale-125 transition-all ease duration-200 dark:fill-light" />
         </a>
       </div>
     </header>

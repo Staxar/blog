@@ -1,20 +1,19 @@
 const siteMetadata = {
-  title: "Next.js Blog With Tailwind CSS and Contentlayer",
-  author: "CodeBucks",
-  headerTitle: "Next.js Blog",
-  description: "A blog created with Next.js, Tailwind.css and contentlayer.",
+  title: "IT blog for new and experience developers",
+  author: "Staxar",
+  headerTitle: "IT Blog",
+  description:
+    "A blog created for programmers who want to expand their knowledge in IT and new technologies.",
   language: "en-us",
   theme: "system", // system, dark or light
-  siteUrl: "https://create-blog-with-nextjs.vercel.app", // your website URL
+  siteUrl: "https://blog-staxar.vercel.app", // your website URL
   siteLogo: "/logo.png",
   socialBanner: "/social-banner.png", // add social banner in the public folder
-  email: "codebucks27@gmail.com",
-  github: "https://github.com/codebucks27",
-  twitter: "https://twitter.com/code_bucks",
+  email: "marcin.kepno@gmail.com",
+  github: "https://github.com/Staxar",
+  twitter: "https://www.twitter.com",
   facebook: "https://facebook.com",
-  youtube: "https://youtube.com/codebucks",
-  linkedin: "https://www.linkedin.com/in/codebucks/",
-  dribbble: "https://www.dribbble.com",
+  linkedin: "https://www.linkedin.com/in/marcin-domaga%C5%82a-17a003251/",
   locale: "en-US",
 };
 
