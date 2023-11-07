@@ -1,6 +1,7 @@
 import React from "react";
 import { GithubIcon, LinkedinIcon, TwitterIcon } from "../Icons";
 import Link from "next/link";
+import siteMetadata from "../../utils/siteMetaData";
 function Footer() {
   return (
     <footer className="mt-16 rounded-2xl bg-dark m-10 flex flex-col items-center text-light ">
@@ -12,20 +13,30 @@ function Footer() {
         members community to stay up to date with latest news. © 2023 CodeBucks.
         All rights reserved.
       </p>
-      <div className="">
-        <a href="" className="inline-block w-6 h-6 mr-4">
-          <LinkedinIcon className="hover:scale-125 transition-all ease-linear duration-200" />
-        </a>
-        <a href="" className="inline-block w-6 h-6 mr-4">
-          <TwitterIcon className="hover:scale-125 transition-all ease-linear duration-200" />
+      <div className="flex items-center mt-8">
+        <a
+          href={siteMetadata.linkedin}
+          className="inline-block w-6 h-6 mr-4"
+          aria-label="Reach out to me via LinkedIn"
+          target="_blank"
+        >
+          <LinkedinIcon className="hover:scale-125 transition-all ease duration-200" />
         </a>
         <a
-          href=""
+          href={siteMetadata.twitter}
+          className="inline-block w-6 h-6 mr-4"
+          aria-label="Reach out to me via Twitter"
+          target="_blank"
+        >
+          <TwitterIcon className="hover:scale-125 transition-all ease duration-200" />
+        </a>
+        <a
+          href={siteMetadata.github}
           className="inline-block w-6 h-6 mr-4 fill-light"
           aria-label="Check my profile on Github"
           target="_blank"
         >
-          <GithubIcon className="fill-light  hover:scale-125 transition-all ease duration-200" />
+          <GithubIcon className="fill-light dark:fill-dark  hover:scale-125 transition-all ease duration-200" />
         </a>
       </div>
       <div className="w-full mt-24 relative font-medium border-t border-solid border-light py-6 px-8 flex flex-row items-center justify-between">
