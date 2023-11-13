@@ -1,6 +1,6 @@
-# SEO Optimized Personal Blog with Next.js, Contentlayer, and Tailwind CSS.
+# Personal Blog.
 
-
+## SEO Optimized Personal Blog with Next.js, Contentlayer, and Tailwind CSS.
 ### Resources Used in This Project
 
 - Character image in the About page created by using [Bing Search[(https://www.bing.com/).
