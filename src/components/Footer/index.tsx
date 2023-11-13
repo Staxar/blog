@@ -32,11 +32,11 @@ function Footer() {
         </a>
         <a
           href={siteMetadata.github}
-          className="inline-block w-6 h-6 mr-4 fill-light"
+          className="inline-block w-6 h-6 mr-4"
           aria-label="Check my profile on Github"
           target="_blank"
         >
-          <GithubIcon className="fill-light dark:fill-dark  hover:scale-125 transition-all ease duration-200" />
+          <GithubIcon className="hover:scale-125 transition-all ease duration-200 dark:fill-light" />
         </a>
       </div>
       <div className="w-full mt-24 relative font-medium border-t border-solid border-light py-6 px-8 flex flex-row items-center justify-between">
