@@ -1,36 +1,130 @@
 ---
 title: "Understanding Machine Learning: An Introduction"
-image: "../../public/blogs/kelly-sikkema--1_RZL8BGBM-unsplash.jpg"
+image: "../../public/blogs/Machine_learning.jpg"
 publishedAt: "2023-11-02"
-description: "Dive into the world of CSS Grid Layout with this comprehensive guide. Learn how to create responsive and dynamic layouts using CSS Grid, and explore various examples and best practices for building modern web interfaces."
+description: "Embark on a journey into the world of machine learning with our article designed for professionals, providing a concise introduction, practical code examples, and foundational insights to unleash the transformative power of this cutting-edge technology."
 updatedAt: "2023-11-02"
-author: "codebucks"
+author: "Marcin Domagala"
 isPublished: true
 tags:
-  - css
-  - web development
+  - machine learning
+  - ai
 ---
 
 # Understanding Machine Learning
 
-Machine Learning (ML) is a subset of artificial intelligence that enables systems to learn and make predictions or decisions without explicit programming. It revolves around the idea that machines can learn from data, identify patterns, and make decisions with minimal human intervention.
+At its core, machine learning is a subset of artificial intelligence (AI) that equips systems with the ability to learn and improve from experience. Instead of relying on explicit programming, ML algorithms leverage patterns and data to make informed decisions and predictions.
 
-## Types of Machine Learning
+## Key Concepts in Machine Learning
 
 ### 1. Supervised Learning
 
-In supervised learning, the model learns from labeled data, mapping input variables to the desired output. Common algorithms include linear regression and classification techniques like Support Vector Machines (SVM) or Decision Trees.
+Supervised learning involves training a model on a labeled dataset, where the algorithm learns the mapping between input features and corresponding output labels. Let's dive into a simple example using Python and scikit-learn:
 
 ```javascript
-// Example of supervised learning using JavaScript
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error
+import matplotlib.pyplot as plt
+import numpy as np
 
-// Load the model
-const model = new SVMModel();
+// Sample data
+X = np.array([1, 2, 3, 4, 5]).reshape(-1, 1)
+y = np.array([2, 4, 5, 4, 5])
 
-// Train the model with labeled data
-model.train(trainingData);
+// Split the data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+// Create a linear regression model
+model = LinearRegression()
+
+// Train the model
+model.fit(X_train, y_train)
 
 // Make predictions
-const result = model.predict(newData);
-console.log(result);
+predictions = model.predict(X_test)
+
+// Evaluate the model
+mse = mean_squared_error(y_test, predictions)
+print(f'Mean Squared Error: {mse}')
+
+// Visualize the results
+plt.scatter(X_test, y_test, color='black')
+plt.plot(X_test, predictions, color='blue', linewidth=3)
+plt.title('Linear Regression Model')
+plt.xlabel('X')
+plt.ylabel('y')
+plt.show()
 ```
+
+This simple linear regression example demonstrates the foundational concepts of supervised learning.
+
+### 2. Unsupervised Learning
+
+Unsupervised learning involves extracting patterns and relationships from unlabeled data. Clustering is a common unsupervised learning technique. Let's explore a clustering example using the K-Means algorithm:
+
+```javascript
+from sklearn.cluster import KMeans
+from sklearn.datasets import make_blobs
+
+//Generate synthetic data
+X, _ = make_blobs(n_samples=300, centers=4, random_state=42)
+
+//Apply K-Means clustering
+kmeans = KMeans(n_clusters=4)
+kmeans.fit(X)
+
+//Visualize the clustering results
+plt.scatter(X[:, 0], X[:, 1], c=kmeans.labels_, cmap='viridis', edgecolor='k')
+plt.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:, 1], marker='X', s=200, c='red')
+plt.title('K-Means Clustering')
+plt.xlabel('Feature 1')
+plt.ylabel('Feature 2')
+plt.show()
+```
+
+Here, K-Means clustering identifies natural groupings within the data.
+
+## The Importance of Feature Engineering
+
+Feature engineering is a crucial aspect of preparing data for machine learning models. It involves selecting, transforming, and creating features to improve the model's performance. Let's consider an example where we engineer features for a classification problem:
+
+```javascript
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score
+
+//Load the Iris dataset
+iris = load_iris()
+X, y = iris.data, iris.target
+
+//Engineer a new feature: the ratio of sepal length to sepal width
+X['sepal_ratio'] = X['sepal length (cm)'] / X['sepal width (cm)']
+
+//Split the data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+//Create a random forest classifier
+clf = RandomForestClassifier(random_state=42)
+
+//Train the model
+clf.fit(X_train, y_train)
+
+//Make predictions
+predictions = clf.predict(X_test)
+
+//Evaluate the model
+accuracy = accuracy_score(y_test, predictions)
+print(f'Accuracy: {accuracy}')
+```
+
+In this example, we engineer a new feature, the sepal ratio, to enhance the model's predictive power.
+
+## Conclusion
+
+Machine learning is a dynamic field with limitless possibilities. This introduction barely scratches the surface, but armed with these foundational concepts, you're ready to embark on a journey of exploration and discovery. Stay tuned for more in-depth explorations into various machine learning algorithms, techniques, and real-world applications. The world of machine learning awaits your creativity and innovation!
+
+<h4 className="prose">Used images: </h4>
+
+- Photo by cottonbro studio from Pexels: https://www.pexels.com/photo/bionic-hand-and-human-hand-finger-pointing-6153354/
