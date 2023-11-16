@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import profileImg from "../../../project images/bard.jpg";
+import profileImg from "../../../project images/123.jpg";
 function Logo() {
   return (
     <Link href={"/"} className="flex items-center text-dark dark:text-light">
