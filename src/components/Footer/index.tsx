@@ -8,11 +8,6 @@ function Footer() {
       <h3 className="mt-16 font-medium text-center capitalize text-4xl px-4">
         Interesting Stories | Updates | Guides
       </h3>
-      <p className="mt-5 px-4 text-center w-3/5 font-light text-base">
-        Subscribe to learn about new technology and updates. Join over 5000+
-        members community to stay up to date with latest news. © 2023 CodeBucks.
-        All rights reserved.
-      </p>
       <div className="flex items-center mt-8">
         <a
           href={siteMetadata.linkedin}
@@ -44,7 +39,7 @@ function Footer() {
         <Link href={"/sitemap.xml"} className="text-center underline">
           sitemap.xml
         </Link>
-        <div className="text-center">Made by Marcin</div>
+        <div className="text-center">Made by Staxar</div>
       </div>
     </footer>
   );
